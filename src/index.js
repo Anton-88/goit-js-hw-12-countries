@@ -11,6 +11,7 @@ refs.input.addEventListener('input', debounce(getBackEndData, refs.delay));
 
 function getBackEndData(e) {
   e.preventDefault();
+
   const inputValue = refs.input.value;
   // console.log('tempData -->>', inputValue);
   fetchCountries(inputValue)

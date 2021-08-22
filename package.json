@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://anton-88.github.io/goit-js-hw-12-countries/",
+  "homepage": "https://github.com/Anton-88/goit-js-hw-12-countries.git",
   
   "scripts": {
     "dev": "parcel src/*.html",
