@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://anton-88.github.io/goit-js-h2-12-countries",
+  "homepage": "https://anton-88.github.io/goit-js-h2-12-countries.git",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-h2-12-countries/"
@@ -30,3 +30,6 @@
     "pnotify": "^5.2.0"
   }
 }
+
+
+
