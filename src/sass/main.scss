@@ -8,9 +8,17 @@
 @import './one_country';
 @import './few_countries';
 
+// :root {
+//     --bgc-input: rgb(171, 91, 173);
+//     --bgc-countries: rgb(204, 150, 150);
+//     --bgc-button: rgb(223, 23, 23);
+//     --text-button: rgb(0, 255, 76);
+// }
+
+
 :root {
-    --bgc-input: rgb(171, 91, 173);
-    --bgc-countries: rgb(204, 150, 150);
-    --bgc-button: rgb(223, 23, 23);
-    --text-button: rgb(0, 255, 76);
+    --bgc-input: rgb(29, 202, 23);
+    --bgc-countries: rgb(240, 226, 28);
+    --bgc-button: rgb(10, 194, 226);
+    --text-button: rgb(45, 15, 214);
 }
