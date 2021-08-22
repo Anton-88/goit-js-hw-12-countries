@@ -20,7 +20,7 @@ function getBackEndData(e) {
 }
 
 function dataHandler(data) {
-  console.log('data :>> ', data);
+  // console.log('data :>> ', data);
   const value = data.length;
   if (data.status === 404) {
     alert('Nothing was found by your query. Please repeat more specifically');
