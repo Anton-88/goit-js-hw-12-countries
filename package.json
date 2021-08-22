@@ -6,11 +6,11 @@
   "homepage": "https://anton-88.github.io/goit-js-hw-12-countries",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-h2-12-countries/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://anton-88.github.io/goit-js-h2-12-countries.git"
+    "url": "git+https://anton-88.github.io/goit-js-hw-12-countries.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
