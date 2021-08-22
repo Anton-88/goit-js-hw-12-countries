@@ -19,7 +19,6 @@ function getBackEndData(e) {
   // console.log('tempData -->>', inputValue);
   fetchCountries(inputValue)
     .then(data => dataHandler(data))
-    .then(refs.input.blur())
     .catch(err => console.log('err --->>>', err))
 
 }
@@ -36,6 +35,7 @@ function dataHandler(data) {
   }
   if (value > 1 && value <= 10) {
     refs.inputContainer.insertAdjacentHTML('afterend', upToTenCountriesList(data));
+    onLinkClick();
   }
   if (value > 10) {
     alert('Too many matches found. Please enter a more specific query');
@@ -53,3 +53,22 @@ function clearBox() {
     document.body.removeChild(document.getElementById("country_list_id"));
   }
 }
+
+// function onLinkClick() {
+//   var link = document.getElementById("country_link");
+//   console.log('link.value :>> ', link.getAttribute("value"));
+//   link.onclick = function(e) {
+//     return OnClickHandler();
+//   }
+// }
+
+// function OnClickHandler(e) {
+//   console.log('it is here');
+//   const tempName = link.value;
+//   console.log('tempName :>> ', tempName);
+//   dataHandler();
+  
+// }
+
+// add to refs.js
+//<a id="country_link" value="${value.name}" href="">${value.name}</a>

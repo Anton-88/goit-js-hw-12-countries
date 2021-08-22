@@ -1,7 +1,7 @@
 .country_box {
     padding: 10px;
     background-color: var(--bgc-countries);
-    max-width: 450px;
+    max-width: 550px;
     margin: 10px auto;
     border-radius: 75px;
     position: relative;
@@ -15,8 +15,8 @@
 
 .country_info {
     display: grid;
-    grid-template-columns: 200px 200px;
-    column-gap: 10px;
+    grid-template-columns: 250px 250px;
+    column-gap: 50px;
 }
 
 .country_info_right {
@@ -39,8 +39,8 @@
 .capital_value, .population_value, .language {
     font-size: 20px;
     font-weight: 400;
-    float: right;
-    width: 100px;
+    float: left;
+    width: 180px;
 }
 
 .languages_list {
@@ -48,7 +48,7 @@
     padding-left: 0;
 }
 
-.language:before {
+.language::before {
     content: "•";
     margin: 0 10px;
 }

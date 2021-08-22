@@ -1,6 +1,8 @@
 export let oneCountryMarkup = ({ name, capital, population, languages, flag }) => {
     //added this check because if you type Macao, for ex, there is no info about its capital
     capital = capital.length > 1 ? capital : 'no data';
+    //to add space for huge numbers
+    population = population.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")
   
     return `<div class="country_box" id='country_box_id'>
               <input type="button" value="X" id="rmvBtn" onclick="document.body.removeChild(this.parentNode)">
@@ -27,7 +29,9 @@ export let oneCountryMarkup = ({ name, capital, population, languages, flag }) =
 export let upToTenCountriesList = (obj) => {
     return `<div class="country_container" id="country_list_id">
                   <ul class="countries_list"> 
-                   ${obj.map(value => `<li class="country_list_item">${value.name}</li>`).join(" ")}
+                   ${obj.map(value => `<li class="country_list_item">
+                   ${value.name}
+                   </li>`).join(" ")}
                  </ul>
                  <input type="button" value="Remove" id="rmvListBtn" onclick="document.body.removeChild(this.parentNode)">
                  </div>`
