@@ -8,17 +8,21 @@
 @import './one_country';
 @import './few_countries';
 
+:root {
+    --bgc-input: rgb(122, 110, 170);;
+    --bgc-countries: rgb(216 126 211);;
+    --bgc-button: rgb(31, 199, 212);
+    --text-button: rgb(255, 255, 255);
+}
+
+
 // :root {
-//     --bgc-input: rgb(171, 91, 173);
-//     --bgc-countries: rgb(204, 150, 150);
-//     --bgc-button: rgb(223, 23, 23);
-//     --text-button: rgb(0, 255, 76);
+//     --bgc-input: rgb(29, 202, 23);
+//     --bgc-countries: rgb(240, 226, 28);
+//     --bgc-button: rgb(10, 194, 226);
+//     --text-button: rgb(45, 15, 214);
 // }
 
-
-:root {
-    --bgc-input: rgb(29, 202, 23);
-    --bgc-countries: rgb(240, 226, 28);
-    --bgc-button: rgb(10, 194, 226);
-    --text-button: rgb(45, 15, 214);
+body {
+    background-image: linear-gradient(139.73deg, rgb(209, 253, 255) 0%, rgb(243, 239, 255) 100%);
 }

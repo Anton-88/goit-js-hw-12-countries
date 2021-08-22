@@ -2,7 +2,8 @@ export let oneCountryMarkup = ({ name, capital, population, languages, flag }) =
     //added this check because if you type Macao, for ex, there is no info about its capital
     capital = capital.length > 1 ? capital : 'no data';
   
-    return `<div class="conutry_box" id='country_box_id'>
+    return `<div class="country_box" id='country_box_id'>
+              <input type="button" value="X" id="rmvBtn" onclick="document.body.removeChild(this.parentNode)">
               <h2 class="country_name">${name}</h2>
               <div class="country_info">
                 <div class="country_info_left">
@@ -20,12 +21,11 @@ export let oneCountryMarkup = ({ name, capital, population, languages, flag }) =
                 <img src="${flag}" alt="${name}" class="flag">
                 </div>
               </div>
-              <input type="button" value="Remove" id="rmvBtn" onclick="document.body.removeChild(this.parentNode)">
             </div>`
   }
   
 export let upToTenCountriesList = (obj) => {
-    return `<div class="country_container">
+    return `<div class="country_container" id="country_list_id">
                   <ul class="countries_list"> 
                    ${obj.map(value => `<li class="country_list_item">${value.name}</li>`).join(" ")}
                  </ul>

@@ -1,8 +1,10 @@
-.conutry_box {
+.country_box {
     padding: 10px;
     background-color: var(--bgc-countries);
     max-width: 450px;
     margin: 10px auto;
+    border-radius: 75px;
+    position: relative;
 }
 
 .country_name {
@@ -58,8 +60,12 @@
 }
 
 #rmvBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     padding: 5px;
     border-radius: 60% 30%;
     background-color: var(--bgc-button);
     color: var(--text-button);
+    margin-right: auto;
 }

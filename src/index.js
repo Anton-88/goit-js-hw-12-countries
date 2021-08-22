@@ -1,21 +1,25 @@
 import './sass/main.scss';
 import debounce from 'lodash.debounce';
 import { alert } from './../node_modules/@pnotify/core/dist/PNotify.js';
+import './../node_modules/@pnotify/core/dist/PNotify.css';
+import './../node_modules/@pnotify/core/dist/BrightTheme.css';
+import './../node_modules/@pnotify/core/dist/Material.css';
 import fetchCountries from './fetchCountries.js';
-import {oneCountryMarkup, upToTenCountriesList} from './render.js'
+import { oneCountryMarkup, upToTenCountriesList } from './render.js'
 import refs from './refs.js'
 
-// const debounceHandle = debounce(getBackEndData, refs.delay);
 refs.input.addEventListener('input', debounce(getBackEndData, refs.delay));
 
 
 function getBackEndData(e) {
   e.preventDefault();
+  clearBox();
 
   const inputValue = refs.input.value;
   // console.log('tempData -->>', inputValue);
   fetchCountries(inputValue)
     .then(data => dataHandler(data))
+    .then(refs.input.blur())
     .catch(err => console.log('err --->>>', err))
 
 }
@@ -39,3 +43,13 @@ function dataHandler(data) {
 
 }
 
+function clearBox() {
+  const isBox = document.querySelector('.country_box');
+  if (isBox !== null) {
+    document.body.removeChild(document.getElementById("country_box_id"));
+  }
+  const isList = document.querySelector('.country_container');
+  if (isList !== null) {
+    document.body.removeChild(document.getElementById("country_list_id"));
+  }
+}
