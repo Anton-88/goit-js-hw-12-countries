@@ -1,0 +1,20 @@
+.input_container {
+    max-width: 1000px;
+    padding: 30px;
+    background-color: var(--bgc-input);
+    border-radius: 30% 70%;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.input_field {
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.input_field::placeholder{
+    color:var(--bgc-button);
+    font-style: italic;
+}

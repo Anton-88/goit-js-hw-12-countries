@@ -1,0 +1,27 @@
+.country_container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgc-countries);
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.countries_list {
+    margin: 10px auto;
+}
+
+.country_list_item {
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#rmvListBtn {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 5px;
+    border-radius: 60% 30%;
+    background-color: var(--bgc-button);
+    color: var(--text-button);
+    max-height: 40px;
+}

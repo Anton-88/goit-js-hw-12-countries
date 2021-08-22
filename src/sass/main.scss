@@ -1,0 +1,16 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+@import './input_div';
+@import './one_country';
+@import './few_countries';
+
+:root {
+    --bgc-input: rgb(171, 91, 173);
+    --bgc-countries: rgb(204, 150, 150);
+    --bgc-button: rgb(223, 23, 23);
+    --text-button: rgb(0, 255, 76);
+}
